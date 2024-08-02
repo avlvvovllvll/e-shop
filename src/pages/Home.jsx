@@ -7,7 +7,7 @@ const  Home =() =>  {
   const [priseFilter, setPriseFilter] = useState("")
   const [filterItems, setFilterItems] = useState([])
   useEffect(()=>{
-    setProducts(Products) 
+    setProducts(Products)
     if (priseFilter === "") {
       setFilterItems(Products)
     } else{
@@ -20,10 +20,12 @@ const  Home =() =>  {
 
 
   console.log("bekzod");
+  console.log("hello");
+
 
 
   return (
-    
+
     <div className='home'>
       <h1>Our Products</h1>
     <div className="filter">
@@ -36,13 +38,13 @@ const  Home =() =>  {
           <div className="card" key={index}>
            <ProductCard item={item}/>
           </div>
-      ))}  
+      ))}
         </>:<p>No Any product with this prise</p>}
-        
+
       </div>
     </div>
   )
-  
+
 
 }
 
