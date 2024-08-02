@@ -19,6 +19,9 @@ const  Home =() =>  {
   },[priseFilter])
 
 
+  console.log("bekzod");
+
+
   return (
     
     <div className='home'>
